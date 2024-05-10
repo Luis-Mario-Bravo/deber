@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diseño Web</title>
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<style>
+
+
+body{
+    background-color: #adf0e9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.logo-title{
+    display:flex;
+}
+
+.logo-title img{
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1{
+    width: 20;
+    font-size: 40px;
+    line-height: 2.5;
+}
+
+h2{
+    width: 20;
+    font-size: 30px;
+    line-height: 2.5;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+h4{
+    width: 20;
+    font-size: 20px;
+    line-height: 3.5;
+}
+
+h3{
+    color: #fff;
+    font-size: 16px;
+    font-family:Verdana;
+    float: justify;
+    line-height: 2.5;
+}
+
+.wrp{
+    width:100%;
+    height: 500px;
+    position: relative;
+}
+
+td{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    order: #bad1bc solid;
+    margin: separate 15px;
+    padding: separate 15px;
+    background-color: #bad1bc;
+    border: rgb(8, 97, 25) 5px solid;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.portada{	
+    width: 100%;
+    height: 100%;
+    background: url(https://assets-global.website-files.com/5a42cd00f6b9a40001bd6b38/5fea34e3f2e3dfa692632059_5e163c8301d6fd39c816e065_WhatsApp-Image-2019-02-04-at-7.10.37-PM.jpeg);
+    filter: brightness(50%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(156, 209, 156);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(78, 100, 78);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.contenido{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: rgba(0,0,11,0,6);
+}
+
+.contenido .info{
+    width:100%;
+    max-width:750px;
+    text-align: justify;
+}
+
+.contenido .info h1{
+    color: #fff;
+    max-width: 750px;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.contenido .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #2b4a28;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border:2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0.5px;
+}
+
+.contenido .info a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.curveado{
+    position: absolute; 
+    width: 100%;
+    bottom: -10px;
+}
+
+.curveado img{
+    width: 100%
+}
+
+@media(max-width:768px){
+    .contenido .info h1{
+        font-size:35px;
+    }
+}
+  p {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  img.pequeña{
+  width: 160px;
+  height: 160px;
+}
+
+nav {
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(63, 90, 60, 0.781);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="diseño.html">Diseño Web</a></li>
+                <li><a href="desarrollo.html">Desarrollo Web</a></li>
+                <li><a href="soporte.html">Soporte Técnico</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+            <ul>
+                <div class="info">
+                    <img src="https://media.licdn.com/dms/image/C4E16AQHhuDPDNn7pEQ/profile-displaybackgroundimage-shrink_200_800/0/1616261732042?e=2147483647&v=beta&t=AmhDwLAY2JKI6Ab0iYtOLOx0HriF9qTOjg0W6wNNMSU"/ width="100%" height="100%" >   
+            </ul>
+    </div>
+    <header>
+
+    <div class="wrp">
+        <div class="portada"></div>
+        <div class="contenido">
+            <div class="info">
+                <h1>DISEÑO WEB</h1>
+                <h3>
+                    El diseño web es una actividad que consiste en la planificación, diseño, implementación y mantenimiento de sitios web. Abarca diferentes aspectos como el diseño gráfico web, diseño de interfaz y la experiencia de usuario, además de la navegabilidad, interactividad, usabilidad, arquitectura de la información e interacción de medios, entre los que podemos mencionar audio, texto, imagen, enlaces, video y la optimización de motores de búsqueda. 
+                </h3>
+                <h3>
+                    A menudo muchas personas trabajan en equipos que cubren los diferentes aspectos del proceso de diseño, aunque existen algunos diseñadores independientes que trabajan solos.
+                </h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="quienes-somos">
+            <h2>¿Para qué sirve el Diseño Web?</h2>
+            <p> 
+                El diseño web ha recorrido un largo camino desde la primera publicación de una página web en 1991. Con más de mil millones de sitios web activos en Internet hoy en día, está claro que esta industria está aquí para quedarse. 
+            </p> 
+        </section>
+            <section id="quienes-somos">
+            <p>Dicho esto, la página web es uno de los activos más valiosos de una empresa, ya que suele ser la primera impresión que un cliente potencial tiene de la marca. No hace falta enfatizar, entonces, que tu sitio web debe ser profesional y atractivo. ¿Pero cómo puedes lograr que se vea así? Con un excelente diseño web. Por ello, en este artículo te explicaremos qué es el diseño web, por qué es importante y cómo hacerlo bien.
+            </p>
+        </section>
+
+        <section id="programas">
+            <h2>Programas Educativos</h2>
+            <table class="center">
+                <tr>
+                  <td><img class="pequeña" src="https://mx.godaddy.com/blog/wp-content/uploads/plataformas-para-crear-sitios-godaddy-creador-768x570.png"/></td>
+              
+                  <td><img class="pequeña" src="https://assets-global.website-files.com/6411daab15c8848a5e4e0153/641b3f9ce3cdde93751582b3_629712455650ab2e848fe8c4_logo-wordpress.png"/></td>
+              
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sketch_Logo.svg/640px-Sketch_Logo.svg.png"/></td>
+
+                  <td><img class="pequeña" src="https://www.pwctraining.org/wp-content/uploads/2020/06/1200px-Adobe_Dreamweaver_CC_icon.svg_.png"/></td>
+
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Sublime_Text_3_logo.png/150px-Sublime_Text_3_logo.png"/></td>
+
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png"/></td>
+                </tr>
+                <tr>
+                  <td><button class="favorite styled" <font color="white">Creadores de Página Web</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">WordPress</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Sketch</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Dreamweaver</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Sublime Text</font></a></button></td>   
+                  <td><button class="favorite styled" <font color="white">Visual Studio Code</font></a></button></td>   
+                </tr>
+            </table>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; [2023] Unidad Educativa Montepiedra</p>
+    </footer>
+</body>
+</html>
