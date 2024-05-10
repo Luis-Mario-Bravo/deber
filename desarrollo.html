@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desarrollo Web</title>
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<style>
+
+
+body{
+    background-color: #f2cbb8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.logo-title{
+    display:flex;
+}
+
+.logo-title img{
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1{
+    width: 20;
+    font-size: 40px;
+    line-height: 2.5;
+}
+
+h2{
+    width: 20;
+    font-size: 30px;
+    line-height: 2.5;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+h4{
+    width: 20;
+    font-size: 20px;
+    line-height: 3.5;
+}
+
+h3{
+    color: #fff;
+    font-size: 16px;
+    font-family:Verdana;
+    float: justify;
+    line-height: 2.5;
+}
+
+.wrp{
+    width:100%;
+    height: 500px;
+    position: relative;
+}
+
+td{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    order: #bad1bc solid;
+    margin: separate 15px;
+    padding: separate 15px;
+    background-color: #bad1bc;
+    border: rgb(8, 97, 25) 5px solid;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.portada{	
+    width: 100%;
+    height: 100%;
+    background: url(https://tekla.io/wp-content/uploads/2022/03/Recurso1.png);
+    filter: brightness(50%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(156, 209, 156);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(78, 100, 78);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.contenido{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: rgba(0,0,11,0,6);
+}
+
+.contenido .info{
+    width:100%;
+    max-width:750px;
+    text-align: justify;
+}
+
+.contenido .info h1{
+    color: #fff;
+    max-width: 750px;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.contenido .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #2b4a28;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border:2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0.5px;
+}
+
+.contenido .info a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.curveado{
+    position: absolute; 
+    width: 100%;
+    bottom: -10px;
+}
+
+.curveado img{
+    width: 100%
+}
+
+@media(max-width:768px){
+    .contenido .info h1{
+        font-size:35px;
+    }
+}
+  p {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  img.pequeña{
+  width: 160px;
+  height: 160px;
+}
+
+nav {
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(63, 90, 60, 0.781);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="diseño.html">Diseño Web</a></li>
+                <li><a href="desarrollo.html">Desarrollo Web</a></li>
+                <li><a href="soporte.html">Soporte Técnico</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+            <ul>
+                <div class="info">
+                    <img src="https://media.licdn.com/dms/image/C4E16AQHhuDPDNn7pEQ/profile-displaybackgroundimage-shrink_200_800/0/1616261732042?e=2147483647&v=beta&t=AmhDwLAY2JKI6Ab0iYtOLOx0HriF9qTOjg0W6wNNMSU"/ width="100%" height="100%" >   
+            </ul>
+    </div>
+    <header>
+
+    <div class="wrp">
+        <div class="portada"></div>
+        <div class="contenido">
+            <div class="info">
+                <h1>DESARROLLO WEB</h1>
+                <h3>
+                    Alguna vez te has preguntado por el proceso a través del cual una maqueta o mockup web se convierte en un sitio web funcional? ¿Qué hace que un sitio web responda a las acciones del usuario y sea dinámica? 
+                </h3>
+                <h3>
+                    Sin duda, el desarrollo web no es una tarea fácil, pero quienes están especializados en este campo pueden hacer maravillas para lograr páginas web increíbles. En este post vamos a contarte con detalles qué es el desarrollo web y para qué sirve. ¡No te pierdas detalle!
+                </h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="quienes-somos">
+            <h2>¿Qué es el desarrollo web?</h2>
+            <p> 
+                El desarrollo web es el proceso de creación y mantenimiento de sitios web. Puede implicar una amplia gama de acciones, desde la codificación y el diseño hasta la gestión de contenidos y la administración del servidor web.
+            </p> 
+        </section>
+            <section id="quienes-somos">
+            <p>
+                Asimismo, el desarrollo web consiste en utilizar lenguajes de programación como: HTML/CSS, PHP, JavaScript, y muchos otros, todo con el fin de escribir programas que harán que tu sitio sea práctico, dinámico y ágil. Además, la codificación forma parte de la vida diaria de un desarrollador. También, el papel del desarrollador como diseñador lo convierte en una pieza esencial en el futuro del óptimo desarrollo web.
+            </p>
+        </section>
+
+        <section id="programas">
+            <h2>Programas que se desarrollan</h2>
+            <table class="center">
+                <tr>
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png"/></td>
+              
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/250px-CSS3_logo_and_wordmark.svg.png"/></td>
+              
+                  <td><img class="pequeña" src="https://misapuntesdigitales.com/wp-content/uploads/2017/09/nociones-basicas-de-JavaScript.jpeg"/></td>
+
+                  <td><img class="pequeña" src="https://avatars.githubusercontent.com/u/25158?s=200&v=4"/></td>
+
+                </tr>
+                <tr>
+                  <td><button class="favorite styled" <font color="white">HTML5</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">CSS</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">JavaScript</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">PHP</font></a></button></td>
+                </tr>
+            </table>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; [2023] Unidad Educativa Montepiedra</p>
+    </footer>
+</body>
+</html>
